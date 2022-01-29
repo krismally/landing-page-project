@@ -1,1 +1,2 @@
 # landing-page-project
+This is the landing page project from The Odin Project's foundations course. I am creating a landing webpage based off of a provided design. I am using HTML and CSS to build the site and utilizing CSS's flexbox features to organize the content.
