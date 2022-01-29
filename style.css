@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display+SC:wght@700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    color: #313546;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border: none;
+    max-width: 100px;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+}
+
+.bg {
+    display: block;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+}
+.bg::after {
+    content: "";
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header {
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.push-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-content {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.header-image img {
+    max-width: 300px;
+    padding: 16px;
+}
+
+.header-text {
+    width: 300px;
+    padding: 0 16px 16px;
+    flex: 1;
+}
+
+.main-text {
+    font-size: 37px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.content {
+    padding: 0 16px 32px;
+    background-color: #44557091;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+    padding: 50px 150px;
+}
+
+.header,
+.footer {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #394a62;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
