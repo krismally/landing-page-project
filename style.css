@@ -3,12 +3,14 @@
 body {
     height: 100vh;
     margin: 0;
+    padding: 0;
     font-family: 'Oswald', sans-serif;
     display: flex;
     flex-flow: column wrap;
-    color: #313546;
+    color: #242735;
     font-weight: 500;
     text-align: center;
+    font-size: 19px; 
 }
 
 ul {
@@ -16,30 +18,43 @@ ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 15px;
+    gap: 30px;
 }
 
 a {
     text-decoration: none;
-    font-size: 18px;
-    color: #e5e7eb;
 }
 
 button {
-    background-color: #6294e6e8;
+    background-color: #4f66a5;
     color: #F9FAF8;
-    font-weight: 700;
-    font-family: Roboto, sans-serif;
-    border: none;
-    max-width: 100px;
-    border-radius: 8px;
-    padding: 6px 12px;
+    border: 2px solid #4f66a5c9;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px #4f66a5;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 13px;
+    text-shadow: 1px 1px 3px #4f66a5;
+}
+
+button:hover {
+    background-color: #F9FAF8;
+    color: #4f66a5;
 }
 
 h2 {
     font-size: 36px;
     font-weight: extra-bold;
     color: #1f2937;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #F9FAF8;
 }
 
 img {
@@ -68,10 +83,11 @@ img {
 }
 
 .header {
-    font-size: 18px;
-    color: #e5e7eb;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: #40536e;
 }
 
 .logo {
@@ -79,11 +95,6 @@ img {
     color: #F9FAF8;
     font-weight: 900;
     font-family: 'Playfair Display SC', serif;
-}
-
-.push-right {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .header-content {
@@ -106,28 +117,23 @@ img {
 .header-text {
     width: 300px;
     padding: 0 16px 16px;
-    flex: 1;
 }
 
 .main-text {
     font-size: 37px;
-    font-weight: extra-bold;
     color: #F9FAF8;
     margin: 0;
     padding-bottom: 0;
 }
 
 .content {
-    padding: 0 16px 32px;
-    background-color: #44557091;
+    padding: 40px 16px 100px;
+    background-color: #5b729791;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 
-.content ul {
-    gap: 75px;
-}
 
 .content img {
     border-radius: 30px;
@@ -135,12 +141,13 @@ img {
     padding: 10px;
 }
 
+
+
 .example {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    font-weight: 600;
+    align-items: center;
 }
 
 .quote {
@@ -148,38 +155,77 @@ img {
     font-weight: light;
     font-style: italic;
     color: #1f2937;
-    padding: 50px 150px;
+    padding: 40px 150px;
     display: flex;
     flex-direction: column;
     align-self: center;
     width: 400px;
 }
 
+
+.call-to-action {
+    background-color: #4b6281;
+    padding-top: 10px;
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    box-shadow: 1px 1px 10px 1px;
+    border: 1px solid #384a6196;
+}
+
+.call-to-action h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.cta-text {
+    text-align: left;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cta-button {
+    align-self: flex-end;
+    justify-content: center;
+    margin-bottom: 22px;
+    background-color: #F9FAF8;
+    color: #4f66a5;
+}
+
+.cta-button:hover {
+    background-color: #4f66a5;
+    color: #F9FAF8;
+    border-color: #F9FAF8;
+}
+
+
 .artist-credits {
-    padding: 16px;
-    font-size: 18px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
     align-items: center;
+    background-color: #5b729791;
+    padding: 50px;
 }
 
 .artist-credits li {
     flex-wrap: wrap;
-    width: 125px;
+    width: 100px;
 }
 
+a, 
 .header,
 .footer {
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #394a62;
+    color: #e5e7eb;
 }
 
 .footer {
+    padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 25px;
 }
